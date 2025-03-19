@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodify - Daily Mood Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="main-title">Moodify - Daily Mood Tracker</h1>
+
+        <div class="input-buttons" id="input-buttons">
+            <button class="mood-button" value="1" title="Happy" data-color="#FFCDD2">Happy 😁</button>
+            <button class="mood-button" value="2" title="Sad" data-color="#FFE0B2">Sad 😢</button>
+            <button class="mood-button" value="3" title="Angry" data-color="#FFF9C4">Angry 😡</button>
+            <button class="mood-button" value="4" title="Excited" data-color="#DCEDC8">Excited 🤩</button>
+            <button class="mood-button" value="5" title="Tired" data-color="#B3E5FC">Tired 😴</button>
+        </div>
+
+        <h2 class="mood-timeline">Mood Timeline</h2>
+        <div class="timeline-controls">
+            <button onclick="displayTimeline('day')" class="timeline-buttons">Day View</button>
+            <button onclick="displayTimeline('week')" class="timeline-buttons">Week View</button>
+            <button onclick="displayTimeline('month')" class="timeline-buttons">Month View</button>
+        </div>
+        
+        <h2 class="calendar-title">Calendar View</h2>
+        <div class="calendar" id="calendar"></div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
